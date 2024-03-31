@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailsconatiner{
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-black ">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <div class="maincard z-[3] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[130%]">
+                <img class="w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="incomingcard z-[2] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[130%]">
+                <img class="w-full h-full object-cover" src="" alt="">    
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen  flex flex-col justify-between">
+            <div class="navbar px-5 py-6 flex justify-between items-center text-white">
+                <div class="prflimg w-[3rem] h-[3rem] rounded-full bg-red-600 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="" alt="">
+                </div>
+                <h3 class="text-2xl font-medium tracking-tighter">They Liked You.</h3>
+                <div class="chaticon relative flex items-center justify-center rounded-full w-[3rem] h-[3rem] bg-white/20">
+                    <i class="opacity-80 ri-chat-3-fill"></i>
+                    <div class="badge flex items-center justify-center rounded-full absolute top- right-0 -translate-y-[18px] translate-x-[3px] w-5 h-5 bg-[#fc5149]">
+                        <h5 class="text-[13px] font-medium">5</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="detailsconatiner">
+                <div class="details px-5 py-6 w-full ">
+                    <div class="element location flex gap-3">
+                        <i class="w-[1.6rem] h-[1.6rem] flex items-center justify-center rounded-full font-semibold bg-white ri-corner-left-up-line"></i>
+                        <h3 class="text-white">USA, California</h3>
+                    </div>
+                    <div class="element name flex gap-5 text-white mt-1">
+                        <h1 class="text-6xl font-regular text-7xl tracking-tighter">Victoria</h1>
+                        <h1 class="text-6xl font-regular text-7xl tracking-tighter opacity-60">20</h1>
+                    </div>
+                    <div class="element tags flex gap-3 text-white mt-4">
+                        <div class="tag flex items-center bg-white/30 px-3 py-1 rounded-full mt-2 gap-3">
+                            <i class="text-sm ri-music-2-fill"></i>
+                            <h3 class="text-sm tracking-tight">Music</h3>
+                        </div>
+                    </div>
+                    <div class="element bio text-white/80 mt-5">
+                        <h3 class="text-xl">Bio</h3>
+                        <p class="text-regular mt-2">Swipe right to start our adventure, crafting our own unforgettable love story together.</p>
+                    </div>
+                    <div class="element flex gap-1.5 items-start mt-7">
+                        <button class="deny py-3 rounded-xl w-1/2 bg-white">
+                            <i class="text-3xl font-semibold ri-close-line"></i>
+                        </button>
+                        <button class="accept py-3 rounded-xl w-1/2 bg-[#fc5149]">
+                            <i class="text-3xl font-semibold text-white ri-heart-2-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
